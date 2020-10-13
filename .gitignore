@@ -1,0 +1,6 @@
+data/
+*.o
+thesaurus-lookup
+hashset-test
+vector-test
+Makefile.dependencies
