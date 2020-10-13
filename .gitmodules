@@ -1,0 +1,3 @@
+[submodule "assn-3-vector-hashset-data"]
+	path = assn-3-vector-hashset-data
+	url = git@github.com:freeuni-paradigms/assn-3-vector-hashset-data.git
