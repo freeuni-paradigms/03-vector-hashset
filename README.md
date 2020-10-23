@@ -25,8 +25,14 @@ test
 ```
 
 ### შეფასება
-./vector-test
-./hashset-test
+ტესტერების წარმატებული output არის sample-output-vector.txt და sample-output.hashset.txt.
+
+იმისთვის, რომ შეამოწმოთ რა ხაზებზე განსხვავდება თქვენი და სწორი output, შეგიძლიათ გამოიყენოთ პროგრამა diff (ამ ბრძანებების მეშვეობით)
+```sh
+./vector-test | diff sample-output-vector.txt - 
+./hashset-test | diff sample-output-hashset.txt -
+```
+
 
 ### ატვირთვა
 google classroom-ზე.
