@@ -33,7 +33,7 @@ HDRS = $(VECTOR_HDRS) $(HASHSET_HDRS) $(ST_HDRS)
 EXECUTABLES = vector-test hashset-test thesaurus-lookup
 PURIFY_EXECUTABLES = vector-test-pure hashset-test-pure thesaurus-lookup-pure
 
-default: $(EXECUTABLES)
+default: data $(EXECUTABLES)
 
 pure: $(PURIFY_EXECUTABLES)
 
@@ -67,3 +67,7 @@ Makefile.dependencies:: $(SRCS) $(HDRS)
 
 clean:
 	\rm -fr a.out $(EXECUTABLES) $(PURIFY_EXECUTABLES) *.o core Makefile.dependencies
+
+data:
+	git clone --depth 1 https://github.com/freeuni-paradigms/03-vector-hashset-data.git
+	mv 03-vector-hashset-data data
